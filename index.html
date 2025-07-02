@@ -4,40 +4,86 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lev ↔ Euro Converter | leveuro.com</title>
-  <link rel="icon" href="/favicon.ico" />
 
-  <!-- Description for search engines -->
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+  <!-- SEO Meta Tags -->
   <meta name="description" content="Convert Bulgarian Lev (BGN) to Euro (EUR) and vice versa instantly. Simple, accurate and always free — leveuro.com." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://leveuro.com/" />
 
-  <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+  <!-- Open Graph for Social Sharing -->
   <meta property="og:title" content="Lev ↔ Euro Converter" />
   <meta property="og:description" content="Free and instant currency conversion between BGN and EUR. No ads, no clutter." />
+  <meta property="og:image" content="https://leveuro.com/preview.jpg" />
   <meta property="og:url" content="https://leveuro.com/" />
   <meta property="og:type" content="website" />
-  <!-- Optional: Image -->
-  <!-- <meta property="og:image" content="https://leveuro.com/preview.jpg" /> -->
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Lev ↔ Euro Converter" />
   <meta name="twitter:description" content="Convert Lev to Euro and back — free, fast and mobile-friendly." />
-  <!-- Optional: Image -->
-  <!-- <meta name="twitter:image" content="https://leveuro.com/preview.jpg" /> -->
+  <meta name="twitter:image" content="https://leveuro.com/preview.jpg" />
 
-  <!-- Favicon (optional but recommended) -->
-  <link rel="icon" href="/favicon.ico" />
-
-  <!-- Fonts and Style -->
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+
   <style>
-    /* Keep your existing CSS here */
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #4e54c8, #8f94fb);
+      color: white;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: #ffffff10;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    h1 {
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    input {
+      width: 100%;
+      padding: 15px;
+      margin: 15px 0;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 10px;
+      outline: none;
+    }
+
+    label {
+      font-size: 1.1em;
+      margin-top: 10px;
+      display: block;
+    }
+
+    footer {
+      margin-top: 20px;
+      font-size: 0.9em;
+      opacity: 0.7;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>BGN ↔ EUR Converter</h1>
+
     <label for="lev">Lev (BGN):</label>
     <input type="number" id="lev" placeholder="Enter lev" />
 
