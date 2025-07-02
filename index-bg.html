@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <title>Конвертор Лев ↔ Евро | leveuro.com</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Конвертирайте бързо и лесно български лев (BGN) в евро (EUR) и обратно. Фиксиран курс: 1 EUR = 1.95583 BGN.">
+  <link rel="canonical" href="https://leveuro.com/index-bg.html" />
+  <link rel="icon" href="/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <script>
+    if (!localStorage.getItem('langRedirected')) {
+      const lang = navigator.language || navigator.userLanguage;
+      if (!lang.startsWith('bg')) {
+        localStorage.setItem('langRedirected', 'true');
+        window.location.href = '/';
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #4e54c8, #8f94fb);
+      color: white;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: #ffffff10;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    h1 {
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-size: 1.1em;
+      margin-top: 15px;
+      display: block;
+      text-align: center;
+    }
+
+    input {
+      display: block;
+      margin: 10px auto;
+      padding: 12px;
+      font-size: 1.1em;
+      width: 80%;
+      max-width: 280px;
+      border: none;
+      border-radius: 10px;
+      outline: none;
+      text-align: center;
+    }
+
+    footer {
+      margin-top: 25px;
+      font-size: 0.9em;
+      opacity: 0.8;
+    }
+
+    a {
+      color: white;
+      text-decoration: underline;
+    }
+
+    .lang-switch {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 0.9em;
+    }
+
+    .lang-switch a {
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="lang-switch">
+    <a href="/">EN</a> | <a href="/index-bg.html">BG</a>
+  </div>
+
+  <div class="container">
+    <h1>Конвертор Лев ↔ Евро</h1>
+
+    <label for="lev">Лева (BGN):</label>
+    <input type="number" id="lev" placeholder="Въведете сума в лева" />
+
+    <label for="euro">Евро (EUR):</label>
+    <input type="number" id="euro" placeholder="Въведете сума в евро" />
+
+    <footer>
+      1 EUR = 1.95583 BGN<br />
+      <a href="/about-bg.html">За сайта</a> |
+      <a href="/faq-bg.html">ЧЗВ</a> |
+      <a href="/lev-to-euro-guide-bg.html">Ръководство</a> |
+      <a href="/eurozone-2026-bg.html">Еврозона 2026</a> |
+      <a href="/fixed-exchange-rate-bg.html">Фиксиран курс</a> |
+      <a href="/privacy-bg.html">Поверителност</a> |
+      <a href="/terms-bg.html">Условия</a>
+    </footer>
+  </div>
+
+  <script>
+    const levInput = document.getElementById('lev');
+    const euroInput = document.getElementById('euro');
+    const rate = 1.95583;
+
+    levInput.addEventListener('input', () => {
+      const lev = parseFloat(levInput.value);
+      euroInput.value = lev ? (lev / rate).toFixed(2) : '';
+    });
+
+    euroInput.addEventListener('input', () => {
+      const euro = parseFloat(euroInput.value);
+      levInput.value = euro ? (euro * rate).toFixed(2) : '';
+    });
+  </script>
+</body>
+</html>
