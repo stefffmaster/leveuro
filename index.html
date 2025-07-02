@@ -27,6 +27,8 @@
   <meta name="twitter:description" content="Convert Lev to Euro and back — free, fast and mobile-friendly." />
   <meta name="twitter:image" content="https://leveuro.com/preview.jpg" />
 
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
 
@@ -88,9 +90,25 @@
     color: white;
     text-decoration: underline;
   }
+    .lang-switch {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 0.9em;
+  color: white;
+}
+
+.lang-switch a {
+  color: white;
+  text-decoration: underline;
+  margin-left: 10px;
+}
   </style>
 </head>
 <body>
+  <div class="lang-switch">
+  <a href="/index.html">EN</a> | <a href="/index-bg.html">BG</a>
+</div>
   <div class="container">
     <h1>BGN ↔ EUR Converter</h1>
 
