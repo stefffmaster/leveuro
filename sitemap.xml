@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home -->
+  <url><loc>https://leveuro.com/</loc></url>
+  <url><loc>https://leveuro.com/index-bg.html</loc></url>
+
+  <!-- Static Pages EN -->
+  <url><loc>https://leveuro.com/about.html</loc></url>
+  <url><loc>https://leveuro.com/faq.html</loc></url>
+  <url><loc>https://leveuro.com/privacy.html</loc></url>
+  <url><loc>https://leveuro.com/terms.html</loc></url>
+
+  <!-- Static Pages BG -->
+  <url><loc>https://leveuro.com/about-bg.html</loc></url>
+  <url><loc>https://leveuro.com/faq-bg.html</loc></url>
+  <url><loc>https://leveuro.com/privacy-bg.html</loc></url>
+  <url><loc>https://leveuro.com/terms-bg.html</loc></url>
+
+  <!-- Blog Articles EN -->
+  <url><loc>https://leveuro.com/fixed-exchange-rate.html</loc></url>
+  <url><loc>https://leveuro.com/lev-to-euro-guide.html</loc></url>
+  <url><loc>https://leveuro.com/eurozone-2026.html</loc></url>
+
+  <!-- Blog Articles BG -->
+  <url><loc>https://leveuro.com/fixed-exchange-rate-bg.html</loc></url>
+  <url><loc>https://leveuro.com/lev-to-euro-guide-bg.html</loc></url>
+  <url><loc>https://leveuro.com/eurozone-2026-bg.html</loc></url>
+
+</urlset>
